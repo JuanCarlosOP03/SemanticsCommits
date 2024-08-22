@@ -8,7 +8,7 @@ Los commits semánticos son una práctica recomendada que permite mantener un hi
 
 Cada commit debe seguir la estructura:
 
-```bash
+```markdown
   <tipo>(<scope>): <mensaje>
 ```
 - **tipo**: Define la naturaleza del cambio (e.g., `feat`, `fix`, `perf`).
@@ -20,31 +20,41 @@ Cada commit debe seguir la estructura:
 A continuación, se detallan los tipos de commits recomendados para proyectos de ingeniería de datos:
 
 - **feat**: Implementación de una nueva funcionalidad o característica.
-  - Ejemplo: `feat(etl): add transformation for new data source`
-  
+```markdown
+  feat(etl): add transformation for new data source
+```
 - **fix**: Corrección de un error que afecta la calidad o precisión de los datos.
-  - Ejemplo: `fix(data-pipeline): resolve issue with missing data in aggregation`
-  
+```markdown
+  fix(data-pipeline): resolve issue with missing data in aggregation 
+```
 - **perf**: Mejora en el rendimiento de un proceso o pipeline de datos.
-  - Ejemplo: `perf(data-warehouse): optimize query for faster retrieval`
-  
+```markdown
+  perf(data-warehouse): optimize query for faster retrieval 
+```
 - **build**: Cambios en la configuración de herramientas de build, scripts de despliegue o instalación.
-  - Ejemplo: `build(scripts): update deployment script for new data warehouse`
-  
+```markdown
+  build(scripts): update deployment script for new data warehouse 
+```
 - **ci**: Modificaciones en la integración continua o en los pipelines de CI.
-  - Ejemplo: `ci(pipeline): add validation step for data schema`
-  
+```markdown
+  ci(pipeline): add validation step for data schema 
+```
 - **docs**: Cambios en la documentación del proyecto.
-  - Ejemplo: `docs(data-pipeline): update documentation for new ETL process`
-  
+```markdown
+  docs(data-pipeline): update documentation for new ETL process 
+```
 - **refactor**: Refactorización de código sin cambios en la funcionalidad.
-  - Ejemplo: `refactor(transformations): reorganize functions for clarity`
-  
+```markdown
+  refactor(transformations): reorganize functions for clarity 
+```
 - **style**: Cambios que no afectan la lógica, como ajustes de formato o estilo.
-  - Ejemplo: `style(scripts): format code with consistent indentation`
-  
+```markdown
+  style(scripts): format code with consistent indentation` 
+```
 - **test**: Adición o modificación de tests para asegurar la calidad de los procesos de datos.
-  - Ejemplo: `test(data-pipeline): add unit tests for new aggregation logic`
+```markdown
+  test(data-pipeline): add unit tests for new aggregation logic 
+```
 
 ## Beneficios de Utilizar Commits Semánticos
 
@@ -57,19 +67,19 @@ A continuación, se detallan los tipos de commits recomendados para proyectos de
 ## Ejemplos de Commits en Ingeniería de Datos
 
 - **Agregar una nueva transformación en un proceso ETL**:
-```bash
+```markdown
   feat(etl): add transformation for new data source
 ```
 - **Corregir un error en un pipeline de datos**:
-```bash
+```markdown
   fix(data-pipeline): resolve issue with missing data in aggregation
 ```
 - **Optimizar una consulta para mejorar el rendimiento**:
-```bash
+```markdown
   perf(data-warehouse): optimize query for faster retrieval
 ```
 - **Actualizar un script de despliegue**:
-```bash
+```markdown
   build(scripts): update deployment script for new data warehouse
 ```
 
